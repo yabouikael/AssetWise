@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create account — AssetWise</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="register">
+  <main class="auth-page">
+    <aside class="auth-aside">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">A</span>AssetWise</a>
+      <div class="auth-copy"><h1>Your repair, in the loop.</h1><p>Create your account to request help, book a visit, and follow every repair update.</p>
+        <div class="auth-feature"><span>✓</span> See your devices and repair history</div><div class="auth-feature"><span>✓</span> Request a consultation in minutes</div><div class="auth-feature"><span>✓</span> Book a convenient appointment</div>
+      </div>
+      <span class="small" style="color:#cbd7ff">Clear updates. No guesswork.</span>
+    </aside>
+    <section class="auth-main">
+      <div class="auth-box">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">A</span>AssetWise</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:28px"><div><h1>Create your account</h1><p class="muted">Join your repair shop workspace.</p></div><button class="icon-btn" data-theme-toggle type="button" aria-label="Toggle dark mode">☾</button></div>
+        <form id="register-form" novalidate>
+          <div class="field"><label for="name">Full name</label><input id="name" autocomplete="name" required placeholder="Your name"><span class="form-error" data-error="name"></span></div>
+          <div class="field"><label for="email">Email address</label><input id="email" type="email" autocomplete="email" required placeholder="you@example.com"><span class="form-error" data-error="email"></span></div>
+          <div class="field"><label for="phone">Phone number</label><input id="phone" type="tel" autocomplete="tel" required placeholder="555-0100"><span class="form-error" data-error="phone"></span></div>
+          <div class="field"><label for="password">Password</label><input id="password" type="password" autocomplete="new-password" required placeholder="At least 8 characters"><span class="form-error" data-error="password"></span></div>
+          <div class="field"><label for="confirm-password">Confirm password</label><input id="confirm-password" type="password" autocomplete="new-password" required placeholder="Enter it again"><span class="form-error" data-error="confirm-password"></span></div>
+          <p id="auth-message" class="form-error" role="alert"></p>
+          <button class="btn btn-primary" type="submit">Create customer account</button>
+        </form>
+        <p class="auth-footer">Already registered? <a href="login.html">Log in</a></p>
+      </div>
+    </section>
+  </main>
+  <script src="js/storage.js"></script><script src="js/auth.js"></script>
+</body>
+</html>

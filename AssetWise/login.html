@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in — AssetWise</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+  <main class="auth-page">
+    <aside class="auth-aside">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">A</span>AssetWise</a>
+      <div class="auth-copy"><h1>Good repairs start with a clear picture.</h1><p>Sign in to your AssetWise workspace to keep things moving.</p>
+        <div class="auth-feature"><span>✓</span> Track devices and repair progress</div><div class="auth-feature"><span>✓</span> Keep every appointment in sync</div><div class="auth-feature"><span>✓</span> Know what needs attention next</div>
+      </div>
+      <span class="small" style="color:#cbd7ff">A calmer way to run your repair desk.</span>
+    </aside>
+    <section class="auth-main">
+      <div class="auth-box">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">A</span>AssetWise</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:34px"><div><h1>Welcome back</h1><p class="muted">Log in to continue to your account.</p></div><button class="icon-btn" data-theme-toggle type="button" aria-label="Toggle dark mode">☾</button></div>
+        <form id="login-form" novalidate>
+          <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="username" required placeholder="you@example.com"><span class="form-error" data-error="email"></span></div>
+          <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="current-password" required placeholder="Enter your password"><span class="form-error" data-error="password"></span></div>
+          <label class="small muted"><input id="show-password" type="checkbox"> Show password</label>
+          <p id="auth-message" class="form-error" role="alert"></p>
+          <button class="btn btn-primary" type="submit">Log in</button>
+        </form>
+        <p class="auth-footer">New to AssetWise? <a href="register.html">Create a customer account</a></p>
+        <p class="small muted" style="text-align:center">Shop admin? Use the admin account provided with your installation.</p>
+      </div>
+    </section>
+  </main>
+  <script src="js/storage.js"></script><script src="js/auth.js"></script>
+</body>
+</html>

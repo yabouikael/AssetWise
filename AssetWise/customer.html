@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer portal — AssetWise</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="customer">
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">A</span><span id="customer-shop-name">AssetWise</span></a>
+    <div class="topbar-actions"><button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle dark mode">☾</button><div class="user-chip"><div class="avatar" id="customer-avatar">C</div><div class="user-name"><strong id="customer-name">Customer</strong><div class="small muted">Customer portal</div></div></div><button class="btn btn-sm" type="button" data-logout>Log out</button></div>
+  </header>
+  <main class="customer-wrap">
+    <div class="section-heading"><div><span class="badge info">YOUR REPAIR DESK</span><h1 style="margin:9px 0 0">Welcome, <span id="customer-greeting">there</span></h1><p>See your devices, get repair updates, and plan your next visit.</p></div></div>
+    <nav class="customer-tabs" aria-label="Customer portal sections">
+      <button class="customer-tab active" data-customer-tab="devices">My devices</button>
+      <button class="customer-tab" data-customer-tab="consultation">Request consultation</button>
+      <button class="customer-tab" data-customer-tab="appointments">Book appointment</button>
+      <button class="customer-tab" data-customer-tab="repairs">My repairs</button>
+      <button class="customer-tab" data-customer-tab="profile">Profile</button>
+    </nav>
+    <section id="customer-content"><div class="empty">Loading your account…</div></section>
+  </main>
+  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true"><section class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"></section></div>
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <script src="js/storage.js"></script><script src="js/auth.js"></script><script src="js/app.js"></script>
+</body>
+</html>
